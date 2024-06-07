@@ -1,5 +1,5 @@
-![modbanner](https://github.com/S-N00B-1/consolesounds/assets/49575478/74c4585d-730b-49a0-a7f2-bc1952c6dcac)
-<h1 align="center">Console Sounds</h1>
-<div align="center">A small mod that brings legacy console edition menu sounds to java
+<img width="150pt" src="https://github.com/ImGRUI/oneshotsounds/assets/91282421/8a32bb5c-980a-4bc9-a9f4-0075a363ee29" align="right">
 
-</div>
+# OneShot Sounds
+
+A small mod that brings OneShot menu sounds to Minecraft.
