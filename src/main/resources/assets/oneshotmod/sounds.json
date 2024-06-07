@@ -1,22 +1,22 @@
 {
   "ui_select": {
     "sounds": [
-      "consolemod:ui_select"
+      "oneshotmod:ui_select"
     ]
   },
   "ui_back": {
     "sounds": [
-      "consolemod:ui_back"
+      "oneshotmod:ui_back"
     ]
   },
   "ui_scroll": {
     "sounds": [
-      "consolemod:ui_scroll"
+      "oneshotmod:ui_scroll"
     ]
   },
   "ui_fail": {
     "sounds": [
-      "consolemod:ui_fail"
+      "oneshotmod:ui_fail"
     ]
   }
 }

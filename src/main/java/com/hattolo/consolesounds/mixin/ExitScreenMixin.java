@@ -19,9 +19,7 @@ public class ExitScreenMixin {
     private void keyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
         var screen = (Screen) (Object) this;
 
-        //System.out.println("Key pressed");
         if (keyCode == GLFW.GLFW_KEY_ESCAPE && screen.shouldCloseOnEsc()) {
-            //System.out.println("Play sound");
             if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnMenuExit) {
                 float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().menuExitVolume;
                 float volume = eventVolume / 100.0F;

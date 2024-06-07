@@ -8,7 +8,6 @@
   "client": [
     "SelectClickableWidgetMixin",
     "ExitScreenMixin",
-    "CloseScreenMixin",
     "CloseHandledScreenMixin",
     "OpenHandledScreenMixin",
     "ClickHandledScreenMixin",
@@ -16,7 +15,8 @@
     "CraftItemStackMixin",
     "SlotClickedRecipeBookMixin",
     "OpenPauseMenuMixin",
-    "ScrollSliderWidgetMixin"
+    "ScrollSliderWidgetMixin",
+    "OpenChatScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

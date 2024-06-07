@@ -1,20 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "consolesounds",
+  "id": "oneshotsounds",
   "version": "${version}",
 
-  "name": "Console Sounds",
-  "description": "Adds menu sounds from Legacy Console versions of Minecraft ",
+  "name": "OneShot Sounds",
+  "description": "Adds menu sounds from OneShot to Minecraft.",
   "authors": [
     "hattolo (or Hattozo)",
-    "S-N00B-1"
+    "S-N00B-1",
+    "ImGRUI"
   ],
   "contact": {
-    "sources": "https://github.com/S-N00B-1/consolesounds"
+    "sources": "https://github.com/ImGRUI/oneshotsounds"
   },
 
   "license": "MIT",
-  "icon": "assets/consolemod/modicon.png",
+  "icon": "assets/oneshotmod/modicon.png",
 
   "environment": "*",
   "entrypoints": {

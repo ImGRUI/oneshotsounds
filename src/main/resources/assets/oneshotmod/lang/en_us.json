@@ -1,0 +1,19 @@
+{
+  "text.autoconfig.oneshotsounds.title": "OneShot Sounds Configuration",
+  "text.autoconfig.oneshotsounds.option.enableHoverSounds": "Enable Hover Sounds",
+  "text.autoconfig.oneshotsounds.option.enableInGameClickSounds": "Enable In-Game Menu Click Sounds",
+  "text.autoconfig.oneshotsounds.option.enableCraftingSounds": "Enable Crafting Sounds (Legacy)",
+  "text.autoconfig.oneshotsounds.option.enableSliderSounds": "Enable Slider Sounds (Legacy)",
+  "text.autoconfig.oneshotsounds.option.playSoundOnPauseMenu": "Play Sound on Pause Menu Open",
+  "text.autoconfig.oneshotsounds.option.playSoundOnInGameMenu": "Play Sound on In-Game Menu Open",
+  "text.autoconfig.oneshotsounds.option.playSoundOnMenuExit": "Play Sound on Menu Close",
+  "text.autoconfig.oneshotsounds.option.playSoundOnInGameMenuExit": "Play Sound on In-Game Menu Close",
+  "text.autoconfig.oneshotsounds.option.onInGameMenuExitVolume" : "Volume on In-Game Menu Close",
+  "text.autoconfig.oneshotsounds.option.menuExitVolume": "Volume on Menu Close",
+  "text.autoconfig.oneshotsounds.option.inGameMenuVolume": "Volume on In-Game Menu Open",
+  "text.autoconfig.oneshotsounds.option.onPauseMenuVolume": "Volume on Pause Menu Open",
+  "text.autoconfig.oneshotsounds.option.sliderVolume": "Volume of Slider Sounds",
+  "text.autoconfig.oneshotsounds.option.craftingVolume": "Volume of Crafting Sounds",
+  "text.autoconfig.oneshotsounds.option.inGameClickVolume": "Volume of In-Game Menu Click Sounds",
+  "text.autoconfig.oneshotsounds.option.hoverVolume": "Volume of Hover Sounds"
+}

@@ -5,18 +5,18 @@ import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "consolesounds")
+@Config(name = "oneshotsounds")
 public class ConsoleSoundsConfig implements ConfigData {
     @Comment("Enables the sound you hear when you hover over buttons.")
     public boolean enableHoverSounds = true;
 
     @Comment("Enables the click sound you hear when you click on a slot on an in-game menu, like a crafting table or your inventory.")
-    public boolean enableInGameClickSounds = true;
+    public boolean enableInGameClickSounds = false;
 
-    @Comment("Enables the pop sound you hear when you craft something.")
-    public boolean enableCraftingSounds = true;
+    @Comment("Enables the pop sound you hear when you craft something (Legacy).")
+    public boolean enableCraftingSounds = false;
 
-    @Comment("Enables the sound you hear when you use a slider.")
+    @Comment("Enables the sound you hear when you use a slider (Legacy).")
     public boolean enableSliderSounds = true;
 
     @Comment("Plays the click sound whenever you open the pause menu. You might want to disable this if you set the game to auto pause on focus loss.")
@@ -51,18 +51,18 @@ public class ConsoleSoundsConfig implements ConfigData {
 
     @Comment("Volume when you open the pause menu.")
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
-    public int onPauseMenuVolume = 100;
+    public int onPauseMenuVolume = 70;
 
-    @Comment("Volume when you open an in-game menu")
+    @Comment("Volume when you open an in-game menu.")
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
-    public int inGameMenuVolume = 100;
+    public int inGameMenuVolume = 70;
 
     @Comment("Volume when you close a menu.")
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
-    public int menuExitVolume = 100;
+    public int menuExitVolume = 70;
 
     @Comment("Volume when you close an in-game menu.")
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
-    public int onInGameMenuExitVolume = 100;
+    public int onInGameMenuExitVolume = 70;
 }
 
