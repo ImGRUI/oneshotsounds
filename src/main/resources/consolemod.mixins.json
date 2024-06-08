@@ -8,12 +8,7 @@
   "client": [
     "SelectClickableWidgetMixin",
     "ExitScreenMixin",
-    "ClickHandledScreenMixin",
-    "ClickCreativeInventoryScreenMixin",
-    "CraftItemStackMixin",
-    "SlotClickedRecipeBookMixin",
     "OpenPauseMenuMixin",
-    "ScrollSliderWidgetMixin",
     "HandledScreenMixin"
   ],
   "injectors": {

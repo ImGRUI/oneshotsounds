@@ -8,15 +8,5 @@
     "sounds": [
       "oneshotmod:ui_back"
     ]
-  },
-  "ui_scroll": {
-    "sounds": [
-      "oneshotmod:ui_scroll"
-    ]
-  },
-  "ui_fail": {
-    "sounds": [
-      "oneshotmod:ui_fail"
-    ]
   }
 }
