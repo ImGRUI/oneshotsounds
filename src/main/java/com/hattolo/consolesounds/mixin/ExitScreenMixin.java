@@ -2,10 +2,11 @@ package com.hattolo.consolesounds.mixin;
 
 import com.hattolo.consolesounds.ConsoleSoundsConfig;
 import com.hattolo.consolesounds.ConsoleSoundsSounds;
-
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.SleepingChatScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import org.lwjgl.glfw.GLFW;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +20,7 @@ public class ExitScreenMixin {
     private void keyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
         var screen = (Screen) (Object) this;
 
-        if (keyCode == GLFW.GLFW_KEY_ESCAPE && screen.shouldCloseOnEsc()) {
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE && screen.shouldCloseOnEsc() && !(screen instanceof HandledScreen) && !(screen instanceof SleepingChatScreen)) {
             if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnMenuExit) {
                 float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().menuExitVolume;
                 float volume = eventVolume / 100.0F;

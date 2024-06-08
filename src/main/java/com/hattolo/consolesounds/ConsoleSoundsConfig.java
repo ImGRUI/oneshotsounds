@@ -17,7 +17,7 @@ public class ConsoleSoundsConfig implements ConfigData {
     public boolean enableCraftingSounds = false;
 
     @Comment("Enables the sound you hear when you use a slider (Legacy).")
-    public boolean enableSliderSounds = true;
+    public boolean enableSliderSounds = false;
 
     @Comment("Plays the click sound whenever you open the pause menu. You might want to disable this if you set the game to auto pause on focus loss.")
     public boolean playSoundOnPauseMenu = true;
