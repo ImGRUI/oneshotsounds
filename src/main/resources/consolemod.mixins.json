@@ -6,10 +6,10 @@
   "mixins": [
   ],
   "client": [
-    "SelectClickableWidgetMixin",
     "ExitScreenMixin",
+    "HandledScreenMixin",
     "OpenPauseMenuMixin",
-    "HandledScreenMixin"
+    "SelectClickableWidgetMixin"
   ],
   "injectors": {
     "defaultRequire": 1
