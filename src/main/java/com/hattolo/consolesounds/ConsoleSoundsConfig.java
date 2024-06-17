@@ -10,10 +10,10 @@ public class ConsoleSoundsConfig implements ConfigData {
     @Comment("Enables the sound you hear when you hover over buttons.")
     public boolean enableHoverSounds = true;
 
-    @Comment("Plays the click sound whenever you open the pause menu. You might want to disable this if you set the game to auto pause on focus loss.")
+    @Comment("Plays the open sound whenever you open the pause menu. You might want to disable this if you set the game to auto pause on focus loss.")
     public boolean playSoundOnPauseMenu = true;
 
-    @Comment("Plays the click sound whenever you open an in-game menu, like a crafting table or your inventory.")
+    @Comment("Plays the open sound whenever you open an in-game menu, like a crafting table or your inventory.")
     public boolean playSoundOnInGameMenu = true;
 
     @Comment("Plays the back sound whenever you close a menu.")
@@ -21,6 +21,12 @@ public class ConsoleSoundsConfig implements ConfigData {
 
     @Comment("Plays the back sound whenever you close an in-game menu, like a crafting table or your inventory.")
     public boolean playSoundOnInGameMenuExit = true;
+
+    @Comment("Plays the open sound whenever you open the chat.")
+    public boolean playSoundOnChatOpen = true;
+
+    @Comment("Plays the open sound whenever you open the lectern.")
+    public boolean playSoundOnLecternOpen = true;
 
 
 
@@ -43,5 +49,13 @@ public class ConsoleSoundsConfig implements ConfigData {
     @Comment("Volume when you close an in-game menu.")
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
     public int onInGameMenuExitVolume = 25;
+
+    @Comment("Volume when you open the chat.")
+    @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+    public int onChatOpenVolume = 25;
+
+    @Comment("Volume when you open the lectern.")
+    @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+    public int onLecternOpenVolume = 25;
 }
 

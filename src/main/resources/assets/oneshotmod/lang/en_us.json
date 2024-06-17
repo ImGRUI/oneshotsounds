@@ -9,5 +9,9 @@
   "text.autoconfig.oneshotsounds.option.menuExitVolume": "Volume on Menu Close",
   "text.autoconfig.oneshotsounds.option.inGameMenuVolume": "Volume on In-Game Menu Open",
   "text.autoconfig.oneshotsounds.option.onPauseMenuVolume": "Volume on Pause Menu Open",
-  "text.autoconfig.oneshotsounds.option.hoverVolume": "Volume of Hover Sounds"
+  "text.autoconfig.oneshotsounds.option.hoverVolume": "Volume of Hover Sounds",
+  "text.autoconfig.oneshotsounds.option.playSoundOnChatOpen": "Play Sound on Chat Open",
+  "text.autoconfig.oneshotsounds.option.onChatOpenVolume": "Volume on Chat Open",
+  "text.autoconfig.oneshotsounds.option.playSoundOnLecternOpen": "Play Sound on Lectern Open",
+  "text.autoconfig.oneshotsounds.option.onLecternOpenVolume": "Volume on Lectern Open"
 }

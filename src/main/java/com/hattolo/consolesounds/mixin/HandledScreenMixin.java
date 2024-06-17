@@ -42,15 +42,15 @@ public abstract class HandledScreenMixin {
             }
         }
         if (currentScreen != screen && screen instanceof LecternScreen) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnInGameMenu) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().inGameMenuVolume;
+            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnLecternOpen) {
+                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().onLecternOpenVolume;
                 float volume = eventVolume / 100.0F;
                 MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK.value(), 1.0F, volume));
             }
         }
         if (currentScreen != screen && screen instanceof ChatScreen && !(screen instanceof SleepingChatScreen)) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnInGameMenu) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().inGameMenuVolume;
+            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnChatOpen) {
+                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().onChatOpenVolume;
                 float volume = eventVolume / 100.0F;
                 MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK.value(), 1.0F, volume));
             }
