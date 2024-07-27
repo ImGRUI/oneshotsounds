@@ -20,18 +20,19 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.hattolo.consolesounds.ConsoleSoundsClient"
+      "com.imgrui.oneshotsounds.OneShotSoundsClient"
     ],
     "modmenu": [
-      "com.hattolo.consolesounds.ConsoleSoundsModMenu"
+      "com.imgrui.oneshotsounds.OneShotSoundsModMenu"
     ]
   },
   "mixins": [
-    "consolemod.mixins.json"
+    "oneshotmod.mixins.json"
   ],
 
   "depends": {
-    "minecraft": ">=1.19.3"
+    "minecraft": ">=1.19.3",
+    "cloth-config": "*"
   },
   "suggests": {
   }

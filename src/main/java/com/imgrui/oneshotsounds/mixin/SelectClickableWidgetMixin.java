@@ -1,7 +1,7 @@
-package com.hattolo.consolesounds.mixin;
+package com.imgrui.oneshotsounds.mixin;
 
-import com.hattolo.consolesounds.ConsoleSoundsConfig;
-import com.hattolo.consolesounds.ConsoleSoundsSounds;
+import com.imgrui.oneshotsounds.OneShotSoundsConfig;
+import com.imgrui.oneshotsounds.OneShotSoundsSounds;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;
@@ -12,6 +12,8 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import java.time.LocalDate;
 
 @Mixin(ClickableWidget.class)
 public class SelectClickableWidgetMixin {
@@ -24,10 +26,10 @@ public class SelectClickableWidgetMixin {
 			if (!widget.active) return;
 			if (!selected) {
 				selected = true;
-				if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().enableHoverSounds) {
-        			float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().hoverVolume;
-        			float volume = eventVolume / 100.0F;
-					MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleSoundsSounds.UI_SELECT, 1.0F, volume));
+				if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().enableHoverSounds) {
+					float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().hoverVolume;
+					float volume = eventVolume / 100.0F;
+					MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master((LocalDate.now().getMonthValue() == 4 && LocalDate.now().getDayOfMonth() == 1) ? OneShotSoundsSounds.NIKOMEOW : OneShotSoundsSounds.UI_SELECT, 1.0F, volume));
 				}
 			}
 		}

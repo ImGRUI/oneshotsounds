@@ -1,7 +1,7 @@
-package com.hattolo.consolesounds.mixin;
+package com.imgrui.oneshotsounds.mixin;
 
-import com.hattolo.consolesounds.ConsoleSoundsConfig;
-import com.hattolo.consolesounds.ConsoleSoundsSounds;
+import com.imgrui.oneshotsounds.OneShotSoundsConfig;
+import com.imgrui.oneshotsounds.OneShotSoundsSounds;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
@@ -29,28 +29,28 @@ public abstract class HandledScreenMixin {
     @Inject(at = @At("HEAD"), method = "setScreen")
     private void ScreenChange(@Nullable Screen screen, CallbackInfo ci) {
         if (currentScreen != screen && screen instanceof HandledScreen && !(screen instanceof CreativeInventoryScreen)) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnInGameMenu) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().inGameMenuVolume;
+            if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().playSoundOnInGameMenu) {
+                float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().inGameMenuVolume;
                 float volume = eventVolume / 100.0F;
                 MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK.value(), 1.0F, volume));
             }
         } else if (screen == null && currentScreen instanceof HandledScreen) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnInGameMenuExit) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().onInGameMenuExitVolume;
+            if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().playSoundOnInGameMenuExit) {
+                float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().onInGameMenuExitVolume;
                 float volume = eventVolume / 100.0F;
-                MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleSoundsSounds.UI_BACK, 1.0F, volume));
+                MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(OneShotSoundsSounds.UI_BACK, 1.0F, volume));
             }
         }
         if (currentScreen != screen && screen instanceof LecternScreen) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnLecternOpen) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().onLecternOpenVolume;
+            if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().playSoundOnLecternOpen) {
+                float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().onLecternOpenVolume;
                 float volume = eventVolume / 100.0F;
                 MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK.value(), 1.0F, volume));
             }
         }
         if (currentScreen != screen && screen instanceof ChatScreen && !(screen instanceof SleepingChatScreen)) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnChatOpen) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().onChatOpenVolume;
+            if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().playSoundOnChatOpen) {
+                float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().onChatOpenVolume;
                 float volume = eventVolume / 100.0F;
                 MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK.value(), 1.0F, volume));
             }

@@ -1,7 +1,7 @@
-package com.hattolo.consolesounds.mixin;
+package com.imgrui.oneshotsounds.mixin;
 
-import com.hattolo.consolesounds.ConsoleSoundsConfig;
-import com.hattolo.consolesounds.ConsoleSoundsSounds;
+import com.imgrui.oneshotsounds.OneShotSoundsConfig;
+import com.imgrui.oneshotsounds.OneShotSoundsSounds;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
@@ -21,10 +21,10 @@ public class ExitScreenMixin {
         var screen = (Screen) (Object) this;
 
         if (keyCode == GLFW.GLFW_KEY_ESCAPE && screen.shouldCloseOnEsc() && !(screen instanceof HandledScreen) && !(screen instanceof SleepingChatScreen)) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnMenuExit) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().menuExitVolume;
+            if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().playSoundOnMenuExit) {
+                float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().menuExitVolume;
                 float volume = eventVolume / 100.0F;
-                MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleSoundsSounds.UI_BACK, 1.0F, volume));
+                MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(OneShotSoundsSounds.UI_BACK, 1.0F, volume));
             }
         }
     }

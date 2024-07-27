@@ -1,4 +1,4 @@
-package com.hattolo.consolesounds;
+package com.imgrui.oneshotsounds;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
@@ -6,7 +6,7 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = "oneshotsounds")
-public class ConsoleSoundsConfig implements ConfigData {
+public class OneShotSoundsConfig implements ConfigData {
     @Comment("Enables the sound you hear when you hover over buttons.")
     public boolean enableHoverSounds = true;
 

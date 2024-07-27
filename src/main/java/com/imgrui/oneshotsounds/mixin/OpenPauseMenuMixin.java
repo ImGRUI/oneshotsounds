@@ -1,6 +1,6 @@
-package com.hattolo.consolesounds.mixin;
+package com.imgrui.oneshotsounds.mixin;
 
-import com.hattolo.consolesounds.ConsoleSoundsConfig;
+import com.imgrui.oneshotsounds.OneShotSoundsConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.GameMenuScreen;
@@ -16,8 +16,8 @@ public class OpenPauseMenuMixin {
     @Inject(at = @At("TAIL"), method = "openPauseMenu")
     private void init(boolean pause, CallbackInfo ci) {
         if (MinecraftClient.getInstance().currentScreen instanceof GameMenuScreen) {
-            if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnPauseMenu) {
-                float eventVolume = AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().onPauseMenuVolume;
+            if (AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().playSoundOnPauseMenu) {
+                float eventVolume = AutoConfig.getConfigHolder(OneShotSoundsConfig.class).getConfig().onPauseMenuVolume;
                 float volume = eventVolume / 100.0F;
                 MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK.value(), 1.0F, volume));
             }

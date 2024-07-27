@@ -8,5 +8,10 @@
     "sounds": [
       "oneshotmod:ui_back"
     ]
+  },
+  "nikomeow": {
+    "sounds": [
+      "oneshotmod:nikomeow"
+    ]
   }
 }
