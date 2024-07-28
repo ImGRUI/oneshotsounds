@@ -20,10 +20,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.imgrui.oneshotsounds.OneShotSoundsClient"
+      "ru.imgrui.oneshotsounds.OneShotSoundsClient"
     ],
     "modmenu": [
-      "com.imgrui.oneshotsounds.OneShotSoundsModMenu"
+      "ru.imgrui.oneshotsounds.OneShotSoundsModMenu"
     ]
   },
   "mixins": [
@@ -31,8 +31,9 @@
   ],
 
   "depends": {
-    "minecraft": ">=1.19.3",
-    "cloth-config": "*"
+    "minecraft": ">=1.21",
+    "cloth-config": "*",
+    "fabric-api": "*"
   },
   "suggests": {
   }

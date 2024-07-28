@@ -1,4 +1,4 @@
-package com.imgrui.oneshotsounds;
+package ru.imgrui.oneshotsounds;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
@@ -12,7 +12,7 @@ public class OneShotSoundsClient implements ClientModInitializer {
     public static final Logger LOGGER = LogManager.getLogger("OneShot Sounds");
 
 	public static Identifier id(String path) {
-        return new Identifier(MOD_ID, path);
+        return Identifier.of(MOD_ID, path);
     }
 
     @Override

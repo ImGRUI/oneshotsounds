@@ -1,4 +1,4 @@
-package com.imgrui.oneshotsounds;
+package ru.imgrui.oneshotsounds;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;

@@ -1,7 +1,7 @@
-package com.imgrui.oneshotsounds.mixin;
+package ru.imgrui.oneshotsounds.mixin;
 
-import com.imgrui.oneshotsounds.OneShotSoundsConfig;
-import com.imgrui.oneshotsounds.OneShotSoundsSounds;
+import ru.imgrui.oneshotsounds.OneShotSoundsConfig;
+import ru.imgrui.oneshotsounds.OneShotSoundsSounds;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;

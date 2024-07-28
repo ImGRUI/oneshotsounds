@@ -1,4 +1,4 @@
-package com.imgrui.oneshotsounds;
+package ru.imgrui.oneshotsounds;
 
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;

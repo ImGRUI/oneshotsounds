@@ -1,4 +1,4 @@
-package com.imgrui.oneshotsounds;
+package ru.imgrui.oneshotsounds;
 
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

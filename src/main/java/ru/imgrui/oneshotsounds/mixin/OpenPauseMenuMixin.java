@@ -1,6 +1,6 @@
-package com.imgrui.oneshotsounds.mixin;
+package ru.imgrui.oneshotsounds.mixin;
 
-import com.imgrui.oneshotsounds.OneShotSoundsConfig;
+import ru.imgrui.oneshotsounds.OneShotSoundsConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.GameMenuScreen;
